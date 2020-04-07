@@ -1,0 +1,31 @@
+{
+	"id": "nodebb-plugin-customize-groups",
+	"url": "https://github.com/NodeBB/nodebb-plugin-customize-groups",
+	"library": "./library.js",
+	"hooks": [
+		{
+			"hook": "filter:users.get", "method": "userChanges"
+		},
+	  	{
+			"hook": "action:group.update", "method": "groupUpdate"
+		},
+	  	{
+			"hook": "filter:group.create", "method": "groupCreate"
+		}
+,
+	  	{
+			"hook": "filter:groups.get", "method": "groupGet"
+		}
+
+	],
+	"staticDirs": {
+	  "public": "public"
+	},
+  "scripts": ["static/showOwner.js"],
+  "acpScripts": [
+	"public/src/admin/manage/group.js"
+  ],
+	"templates": "static/templates",
+	"languages": "public/language",
+	"defaultLang": "en-US"
+}
