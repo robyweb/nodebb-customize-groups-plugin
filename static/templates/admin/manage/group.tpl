@@ -13,13 +13,13 @@
 				</fieldset>
 
 				<fieldset>
-					<label for="change-group-city">[[admin/manage/groups:edit.city]]</label>
-					<input type="text" class="form-control" id="change-group-city" placeholder="A city name" value="{group.city}" maxlength="255" /><br />
+					<label for="change-group-rules">[[admin/manage/groups:edit.rules]]</label>
+					<textarea class="form-control" id="change-group-rules" placeholder="Rules text" maxlength="255" rows="4" cols="50">{group.rules}</textarea><br />
 				</fieldset>
 
 				<fieldset>
-					<label for="change-group-country">[[admin/manage/groups:edit.country]]</label>
-					<input type="text" class="form-control" id="change-group-country" placeholder="Country name" value="{group.country}" maxlength="255" /><br />
+					<label for="change-group-city">[[admin/manage/groups:edit.city]]</label>
+					<input type="text" class="form-control" id="change-group-city" placeholder="A city name" value="{group.city}" maxlength="255" /><br />
 				</fieldset>
 
 				<fieldset>
@@ -28,8 +28,13 @@
 				</fieldset>
 
 				<fieldset>
-					<label for="change-group-rules">[[admin/manage/groups:edit.rules]]</label>
-					<textarea class="form-control" id="change-group-rules" placeholder="Rules text" maxlength="255" rows="4" cols="50">{group.rules}</textarea><br />
+					<label for="change-group-country">[[admin/manage/groups:edit.country]]</label>
+					<input type="text" class="form-control" id="change-group-country" placeholder="Country name" value="{group.country}" maxlength="255" /><br />
+				</fieldset>
+
+				<fieldset>
+					<label for="change-group-cid">[[admin/manage/groups:edit.cid]]</label>
+					<input type="text" class="form-control" id="change-group-cid" placeholder="Category Id" value="{group.cid}" maxlength="10" /><br />
 				</fieldset>
 
 				<div class="row">

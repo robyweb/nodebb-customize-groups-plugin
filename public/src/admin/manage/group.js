@@ -107,6 +107,7 @@ define('admin/manage/group', [
 					country: $('#change-group-country').val(),
 					state: $('#change-group-state').val(),
 					rules: $('#change-group-rules').val(),
+					cid: $('#change-group-cid').val(),
 					icon: groupIcon.attr('value'),
 					labelColor: changeGroupLabelColor.val(),
 					textColor: changeGroupTextColor.val(),
