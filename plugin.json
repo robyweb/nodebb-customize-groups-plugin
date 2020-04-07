@@ -1,6 +1,6 @@
 {
 	"id": "nodebb-plugin-customize-groups",
-	"url": "https://github.com/NodeBB/nodebb-plugin-customize-groups",
+	"url": "https://github.com/robyweb/nodebb-plugin-customize-groups",
 	"library": "./library.js",
 	"hooks": [
 		{

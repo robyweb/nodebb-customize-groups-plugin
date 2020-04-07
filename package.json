@@ -5,7 +5,7 @@
   "main": "library.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Vyoo/nodebb-customize-groups-plugin.git"
+    "url": "git+https://github.com/robyweb/nodebb-customize-groups-plugin.git"
   },
   "keywords": [
     "nodebb",
@@ -19,10 +19,10 @@
       "git add"
     ]
   },
-  "author": "kotowolod <kotowolod@gmail.com>",
+  "author": "Fredrick Roby <froby@robyweb.com>",
   "license": "MIT",
   "nbbpm": {
-    "compatibility": "^1.0.0"
+    "compatibility": "^1.12.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.0.0",
@@ -36,9 +36,9 @@
     "lint-staged": "^10.0.9"
   },
   "bugs": {
-    "url": "https://github.com/Vyoo/nodebb-customize-groups-plugin/issues"
+    "url": "https://github.com/robyweb/nodebb-customize-groups-plugin/issues"
   },
-  "homepage": "https://github.com/Vyoo/nodebb-customize-groups-plugin#readme",
+  "homepage": "https://github.com/robyweb/nodebb-customize-groups-plugin#readme",
   "directories": {
     "lib": "lib"
   },
