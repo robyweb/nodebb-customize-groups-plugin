@@ -33,6 +33,11 @@
 				</fieldset>
 
 				<fieldset>
+					<label for="change-group-coverUrl">[[admin/manage/groups:edit.coverUrl]]</label>
+					<input type="text" class="form-control" id="change-group-coverUrl" placeholder="Cover Url" value="{group.coverUrl}" maxlength="255" /><br />
+				</fieldset>
+
+				<fieldset>
 					<label for="change-group-cid">[[admin/manage/groups:edit.cid]]</label>
 					<input type="text" class="form-control" id="change-group-cid" placeholder="Category Id" value="{group.cid}" maxlength="10" /><br />
 				</fieldset>

@@ -22,6 +22,8 @@
 	"edit.country": "Country",
 	"edit.state": "State",
 	"edit.rules": "Rules",
+	"edit.cid": "Category Id",
+	"edit.coverUrl": "Cover Url",
 	"edit.user-title": "Title of Members",
 	"edit.icon": "Group Icon",
 	"edit.label-color": "Group Label Color",
