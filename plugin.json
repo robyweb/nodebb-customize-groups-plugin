@@ -3,9 +3,6 @@
 	"url": "https://github.com/robyweb/nodebb-plugin-customize-groups",
 	"library": "./library.js",
 	"hooks": [
-		{
-			"hook": "filter:users.get", "method": "userChanges"
-		},
 	  	{
 			"hook": "action:group.update", "method": "groupUpdate"
 		},
