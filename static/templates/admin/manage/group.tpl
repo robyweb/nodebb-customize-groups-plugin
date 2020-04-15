@@ -42,6 +42,16 @@
 					<input type="text" class="form-control" id="change-group-cid" placeholder="Category Id" value="{group.cid}" maxlength="10" /><br />
 				</fieldset>
 
+				<fieldset>
+					<label for="change-group-latitude">[[admin/manage/groups:edit.latitude]]</label>
+					<input type="text" class="form-control" id="change-group-latitude" placeholder="Latitude" value="{group.latitude}" maxlength="10" /><br />
+				</fieldset>
+
+				<fieldset>
+					<label for="change-group-longitude">[[admin/manage/groups:edit.longitude]]</label>
+					<input type="text" class="form-control" id="change-group-longitude" placeholder="Longitude" value="{group.longitude}" maxlength="10" /><br />
+				</fieldset>
+
 				<div class="row">
 					<div class="col-md-4">
 						<fieldset>
