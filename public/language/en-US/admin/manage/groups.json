@@ -18,9 +18,8 @@
 
 	"edit.name": "Name",
 	"edit.description": "Description",
-	"edit.city": "City",
-	"edit.country": "Country",
-	"edit.state": "State",
+	"edit.location": "Location",
+	"edit.placeId": "Place Id",
 	"edit.rules": "Rules",
 	"edit.cid": "Category Id",
 	"edit.coverUrl": "Cover Url",

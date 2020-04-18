@@ -18,18 +18,13 @@
 				</fieldset>
 
 				<fieldset>
-					<label for="change-group-city">[[admin/manage/groups:edit.city]]</label>
-					<input type="text" class="form-control" id="change-group-city" placeholder="A city name" value="{group.city}" maxlength="255" /><br />
+					<label for="change-group-location">[[admin/manage/groups:edit.location]]</label>
+					<input type="text" class="form-control" id="change-group-location" placeholder="Location" value="{group.location}" maxlength="255" /><br />
 				</fieldset>
 
 				<fieldset>
-					<label for="change-group-state">[[admin/manage/groups:edit.state]]</label>
-					<input type="text" class="form-control" id="change-group-state" placeholder="State name" value="{group.state}" maxlength="255" /><br />
-				</fieldset>
-
-				<fieldset>
-					<label for="change-group-country">[[admin/manage/groups:edit.country]]</label>
-					<input type="text" class="form-control" id="change-group-country" placeholder="Country name" value="{group.country}" maxlength="255" /><br />
+					<label for="change-group-placeId">[[admin/manage/groups:edit.placeId]]</label>
+					<input type="text" class="form-control" id="change-group-placeId" placeholder="Google Place Id" value="{group.placeId}" maxlength="255" /><br />
 				</fieldset>
 
 				<fieldset>

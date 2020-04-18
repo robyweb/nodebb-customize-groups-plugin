@@ -22,18 +22,16 @@ module.exports.userChanges = async function (users) {
 
 module.exports.groupUpdate = async function ({name, values}) {
 	await db.setObject(`group-custom-fields:${name}`, {
-		city: values.city,
-		state: values.state,
-		country: values.country,
+		location: values.location,
+		placeId: values.placeId,
 		rules: values.rules,
 		cid: values.cid,
 		coverUrl: values.coverUrl,
 		latitude: values.latitude,
 		longitude: values.longitude,
 	}).catch(console.error);
-	delete values.city;
-	delete values.state;
-	delete values.country;
+	delete values.location;
+	delete values.placeId;
 	delete values.rules;
 	delete values.cid;
 	delete values.coverUrl;
@@ -53,7 +51,7 @@ module.exports.groupGet = async function ({groups}) {
 };
 
 module.exports.groupCreate = async function ({group, data}) {
-	await db.setObject(`group-custom-fields:${group.name}`, {city:'', state:'', country:'', rules:'', cid:'', coverUrl: '', latitude: 0, longitude: 0})
+	await db.setObject(`group-custom-fields:${group.name}`, {location:'', placeId:'', rules:'', cid:'', coverUrl: '', latitude: 0, longitude: 0})
 		.catch(console.error);
 };
 
