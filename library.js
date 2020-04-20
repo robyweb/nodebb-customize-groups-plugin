@@ -55,3 +55,35 @@ module.exports.groupCreate = async function ({group, data}) {
 		.catch(console.error);
 };
 
+module.exports.categoryUpdate = async function ({ name, values }) {
+  await db
+    .setObject(`category-custom-fields:${name}`, {
+      iconName: values.iconName,
+    })
+    .catch(console.error);
+  delete values.iconName;
+
+  return { values };
+};
+
+module.exports.categoryGet = async function ({ categories }) {
+  if (categories[0]) {
+    for (let idx = 0; idx < categories.length; idx++) {
+      const res = await db
+        .getObject(`category-custom-fields:${categories[idx].name}`)
+        .catch(console.error);
+      Object.assign(categories[idx], res);
+    }
+  }
+  return { categories };
+};
+
+module.exports.categoryCreate = async function ({ category, data }) {
+  await db
+    .setObject(`group-custom-fields:${category.name}`, {
+			iconName: ""
+    })
+    .catch(console.error);
+};
+
+
