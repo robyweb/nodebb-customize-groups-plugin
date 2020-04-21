@@ -3,25 +3,41 @@
 	"url": "https://github.com/robyweb/nodebb-plugin-customize-groups",
 	"library": "./library.js",
 	"hooks": [
-	  	{
-			"hook": "action:group.update", "method": "groupUpdate"
+		{
+			"hook": "action:group.update",
+			"method": "groupUpdate"
 		},
-	  	{
-			"hook": "filter:group.create", "method": "groupCreate"
+		{
+			"hook": "filter:group.create",
+			"method": "groupCreate"
+		},
+		{
+			"hook": "filter:groups.get",
+			"method": "groupGet"
+		},
+		{
+			"hook": "action:category.update",
+			"method": "categoryUpdate"
+		},
+		{
+			"hook": "filter:category.create",
+			"method": "categoryCreate"
+		},
+		{
+			"hook": "filter:category.get",
+			"method": "categoryGet"
 		}
-,
-	  	{
-			"hook": "filter:groups.get", "method": "groupGet"
-		}
-
 	],
 	"staticDirs": {
-	  "public": "public"
+		"public": "public"
 	},
-  "scripts": ["static/showOwner.js"],
-  "acpScripts": [
-	"public/src/admin/manage/group.js"
-  ],
+	"scripts": [
+		"static/showOwner.js"
+	],
+	"acpScripts": [
+		"public/src/admin/manage/group.js",
+		"public/src/admin/manage/category.js"
+	],
 	"templates": "static/templates",
 	"languages": "public/language",
 	"defaultLang": "en-US"
