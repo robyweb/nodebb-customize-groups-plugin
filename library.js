@@ -83,7 +83,9 @@ module.exports.categoryCreate = async function ({ category, data }) {
     .setObject(`group-custom-fields:${category.name}`, {
 			iconName: ""
     })
-    .catch(console.error);
+		.catch(console.error);
+
+	return { category, data };
 };
 
 
