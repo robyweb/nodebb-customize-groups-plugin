@@ -1,7 +1,7 @@
 {
-  "name": "nodebb-plugin-customize-groups-categories",
+  "name": "nodebb-plugin-customize-groups",
   "version": "0.1.10",
-  "description": "Plugin to customize groups and",
+  "description": "Plugin to customize groups and categories",
   "main": "library.js",
   "repository": {
     "type": "git",
