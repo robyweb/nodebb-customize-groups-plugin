@@ -66,16 +66,14 @@ module.exports.categoryUpdate = async function ({ name, values }) {
   return { values };
 };
 
-module.exports.categoryGet = async function ({ categories }) {
-  if (categories[0]) {
-    for (let idx = 0; idx < categories.length; idx++) {
-      const res = await db
-        .getObject(`category-custom-fields:${categories[idx].name}`)
-        .catch(console.error);
-      Object.assign(categories[idx], res);
-    }
+module.exports.categoryGet = async function ({ category }) {
+  if (category) {
+		const res = await db
+			.getObject(`category-custom-fields:${category.name}`)
+			.catch(console.error);
+		Object.assign(category, res);
   }
-  return { categories };
+  return { category };
 };
 
 module.exports.categoryCreate = async function ({ category, data }) {
