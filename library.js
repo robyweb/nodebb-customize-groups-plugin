@@ -53,7 +53,7 @@ module.exports.groupGet = async function ({groups}) {
 };
 
 module.exports.groupCreate = async function ({group, data}) {
-	await db.setObject(`group-custom-fields:${group.name}`, {location:'', placeId:'', rules:'', cid:'', coverUrl: '', latitude: 0, longitude: 0, isNational: 0})
+	await db.setObject(`group-custom-fields:${group.name}`, {location:'', placeId:'', rules:'', cid:'', coverUrl: '', latitude: 0, longitude: 0, isNational: false})
 		.catch(console.error);
 };
 
