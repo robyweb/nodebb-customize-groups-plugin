@@ -109,6 +109,7 @@ define('admin/manage/group', [
 					cid: $('#change-group-cid').val(),
 					latitude: $('#change-group-latitude').val(),
 					longitude: $('#change-group-longitude').val(),
+					isNational: $('change-group-isNational').val(),
 					coverUrl: $('#change-group-coverUrl').val(),
 					icon: groupIcon.attr('value'),
 					labelColor: changeGroupLabelColor.val(),

@@ -25,6 +25,7 @@
 	"edit.coverUrl": "Cover Url",
 	"edit.latitude": "Latitude",
 	"edit.longitude": "Longitude",
+	"edit.isNational": "National",
 	"edit.user-title": "Title of Members",
 	"edit.icon": "Group Icon",
 	"edit.label-color": "Group Label Color",
