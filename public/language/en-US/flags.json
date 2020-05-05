@@ -25,6 +25,7 @@
 	"filter-cid": "Category",
 	"filter-latitude": "Latitude",
 	"filter-longitude": "Longitude",
+	"filter-isNational": "National",
 	"filter-quick-mine": "Assigned to me",
 	"filter-cid-all": "All categories",
 	"apply-filters": "Apply Filters",

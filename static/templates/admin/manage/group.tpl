@@ -47,6 +47,11 @@
 					<input type="text" class="form-control" id="change-group-longitude" placeholder="Longitude" value="{group.longitude}" maxlength="10" /><br />
 				</fieldset>
 
+				<fieldset>
+					<label for="change-group-isNational">[[admin/manage/groups:edit.isNational]]</label>
+					<input type="text" class="form-control" id="change-group-isNational" placeholder="National" value="{group.isNational}" maxlength="10" /><br />
+				</fieldset>
+
 				<div class="row">
 					<div class="col-md-4">
 						<fieldset>

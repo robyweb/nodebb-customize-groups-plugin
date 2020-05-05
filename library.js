@@ -29,6 +29,7 @@ module.exports.groupUpdate = async function ({name, values}) {
 		coverUrl: values.coverUrl,
 		latitude: values.latitude,
 		longitude: values.longitude,
+		isNational: values.isNational,
 	}).catch(console.error);
 	delete values.location;
 	delete values.placeId;
@@ -37,6 +38,7 @@ module.exports.groupUpdate = async function ({name, values}) {
 	delete values.coverUrl;
 	delete values.latitude;
 	delete values.longitude;
+	delete values.isNational;
 	return {values};
 };
 
@@ -51,7 +53,7 @@ module.exports.groupGet = async function ({groups}) {
 };
 
 module.exports.groupCreate = async function ({group, data}) {
-	await db.setObject(`group-custom-fields:${group.name}`, {location:'', placeId:'', rules:'', cid:'', coverUrl: '', latitude: 0, longitude: 0})
+	await db.setObject(`group-custom-fields:${group.name}`, {location:'', placeId:'', rules:'', cid:'', coverUrl: '', latitude: 0, longitude: 0, isNational: false})
 		.catch(console.error);
 };
 
