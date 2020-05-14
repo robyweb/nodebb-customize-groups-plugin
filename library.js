@@ -60,10 +60,12 @@ module.exports.groupCreate = async function ({group, data}) {
 module.exports.categoryUpdate = async function ({ name, values }) {
   await db
     .setObject(`category-custom-fields:${name}`, {
-      iconName: values.iconName,
+			iconName: values.iconName,
+			isAdminOnly: values.isAdminOnly,
     })
     .catch(console.error);
-  delete values.iconName;
+	delete values.iconName;
+	delete values.isAdminOnly;
 
   return { values };
 };
@@ -81,7 +83,8 @@ module.exports.categoryGet = async function ({ category }) {
 module.exports.categoryCreate = async function ({ category, data }) {
   await db
     .setObject(`group-custom-fields:${category.name}`, {
-			iconName: ""
+			iconName: '',
+			isAdminOnly: false,
     })
 		.catch(console.error);
 

@@ -325,6 +325,7 @@ define("admin/manage/category", [
       modified_categories[cid][$(el).attr("data-name")] = value;
 
       modified_categories[cid].iconName = $("#change-category-iconName").val();
+      modified_categories[cid].isAdminOnly = $("#change-category-isAdminOnly").val();
       app.flags = app.flags || {};
       app.flags._unsaved = true;
     }
