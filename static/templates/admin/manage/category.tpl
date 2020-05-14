@@ -29,6 +29,10 @@
 					<label for="change-group-name">Category Icon Name</label>
 					<input type="text" class="form-control" id="change-category-iconName" placeholder="Category icon name" value="{category.iconName}" maxlength="100" <!-- IF group.system -->readonly<!-- ENDIF group.system -->/><br />
 				</fieldset>
+				<fieldset>
+					<label for="change-group-admin">Category Admin Only?</label>
+					<input type="text" class="form-control" id="change-category-isAdminOnly" placeholder="Category For Admins Only" value="{category.isAdminOnly}" maxlength="5" <!-- IF group.system -->readonly<!-- ENDIF group.system -->/><br />
+				</fieldset>
 				<fieldset class="row">
 					<div class="col-sm-4 col-xs-12">
 						<div class="form-group">
