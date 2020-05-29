@@ -45,11 +45,12 @@ module.exports.groupUpdate = async function ({name, values}) {
 module.exports.groupGet = async function ({groups}) {
 	if(groups[0]){
 		for (let idx = 0; idx < groups.length; idx++){
-			if (!groups[idx]) {
-				return;
+			if (groups[idx]) {
+			const res = await db
+        .getObject(`group-custom-fields:${groups[idx].name}`)
+        .catch(console.error);
+      Object.assign(groups[idx], res);
 			}
-			const res = await db.getObject(`group-custom-fields:${groups[idx].name}`).catch(console.error);
-			Object.assign(groups[idx], res);
 		}
 	}
 	return {groups};
