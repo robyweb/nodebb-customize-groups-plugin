@@ -49,8 +49,7 @@ module.exports.groupGet = async function ({ groups = []}) {
 			const res = await db.getObject(`group-custom-fields:${group.name}`).catch(console.error);
 			return Object.assign(group, res);
 		});
-
-	return { groups: customizedGroups };
+	return { groups: await Promise.all(customizedGroups) };
 };
 
 module.exports.groupCreate = async function ({group, data}) {
