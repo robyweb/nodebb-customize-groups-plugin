@@ -42,15 +42,17 @@ module.exports.groupUpdate = async function ({name, values}) {
 	return {values};
 };
 
-module.exports.groupGet = async function ({ groups = []}) {
-	const customizedGroups = groups
-		.filter(group => !!group) // NodeBB is returning null groups probably deleted leftovers
-		.map((group, idx) => {
+module.exports.groupGet = async function ({groups}) {
+	if(groups[0]){
+		for (let idx = 0; idx < groups.length; idx++){
+			if (!group[idx]) {
+				return;
+			}
 			const res = await db.getObject(`group-custom-fields:${groups[idx].name}`).catch(console.error);
-			return Object.assign(group, res);
-		});
-
-	return { groups: customizedGroups };
+			Object.assign(groups[idx], res);
+		}
+	}
+	return {groups};
 };
 
 module.exports.groupCreate = async function ({group, data}) {
