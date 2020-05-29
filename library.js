@@ -45,7 +45,7 @@ module.exports.groupUpdate = async function ({name, values}) {
 module.exports.groupGet = async function ({groups}) {
 	if(groups[0]){
 		for (let idx = 0; idx < groups.length; idx++){
-			if (!group[idx]) {
+			if (!groups[idx]) {
 				return;
 			}
 			const res = await db.getObject(`group-custom-fields:${groups[idx].name}`).catch(console.error);
