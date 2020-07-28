@@ -4,7 +4,7 @@
 			<div class="group-settings-form">
 				<fieldset>
 					<label for="change-group-name">[[admin/manage/groups:edit.name]]</label>
-					<input type="text" class="form-control" id="change-group-name" placeholder="Group Name" value="{group.displayName}" maxlength="{maximumGroupNameLength}" <!-- IF group.system -->readonly<!-- ENDIF group.system -->/><br />
+					<input type="text" disabled class="form-control" id="change-group-name" placeholder="Group Name" value="{group.displayName}" maxlength="{maximumGroupNameLength}" <!-- IF group.system -->readonly<!-- ENDIF group.system -->/><br />
 				</fieldset>
 
 				<fieldset>
