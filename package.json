@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-customize-groups",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Plugin to customize groups and categories",
   "main": "library.js",
   "repository": {
@@ -22,7 +22,7 @@
   "author": "Fredrick Roby <froby@robyweb.com>",
   "license": "MIT",
   "nbbpm": {
-    "compatibility": "^1.13.2"
+    "compatibility": "^1.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.0.0",
